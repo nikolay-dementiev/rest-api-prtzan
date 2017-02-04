@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'REST-api-test-prtzn' do
+
+  pod 'Alamofire', '~> 4.3'
+
+  target 'REST-api-test-prtznTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

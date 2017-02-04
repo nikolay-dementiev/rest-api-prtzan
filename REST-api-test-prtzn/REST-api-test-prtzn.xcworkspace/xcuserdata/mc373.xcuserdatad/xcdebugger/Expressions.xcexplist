@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LoginView.loadViewFromNib() -&gt; UIView:LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nib.instantiate(withOwner: self, options: nil)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginView.xibSetup() -&gt; ():LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
