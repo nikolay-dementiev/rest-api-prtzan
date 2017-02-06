@@ -10,11 +10,6 @@
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="REST_api_test_prtzn" customModuleProvider="target">
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="textSize">
-                    <integer key="value" value="16"/>
-                </userDefinedRuntimeAttribute>
-            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="demoButton" destination="N4h-a9-tb9" id="YSQ-k2-g5k"/>
                 <outlet property="emaiLabel" destination="icT-mp-3T7" id="Tm5-Z2-QOa"/>
@@ -98,7 +93,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pLw-vz-JDq">
                             <rect key="frame" x="0.0" y="152" width="301" height="146"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="top" distribution="equalCentering" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6r5-HN-9Jq">
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6r5-HN-9Jq">
                                     <rect key="frame" x="0.0" y="0.0" width="301" height="30"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLR-xv-Jhc">
@@ -125,8 +120,12 @@
                                             <state key="normal" title="Login" backgroundImage="btn_blue_unpressed"/>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WwX-GL-2q5" firstAttribute="width" secondItem="N4h-a9-tb9" secondAttribute="width" id="dqk-kv-miA"/>
+                                        <constraint firstItem="WwX-GL-2q5" firstAttribute="height" secondItem="N4h-a9-tb9" secondAttribute="height" id="unM-7V-ruP"/>
+                                    </constraints>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="bottom" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="p1A-6X-IGi">
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="p1A-6X-IGi">
                                     <rect key="frame" x="0.0" y="116" width="301" height="30"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzQ-Zx-cc4">
@@ -142,8 +141,10 @@
                             </subviews>
                             <constraints>
                                 <constraint firstItem="6r5-HN-9Jq" firstAttribute="leading" secondItem="pLw-vz-JDq" secondAttribute="leading" id="5DF-Se-fN8"/>
+                                <constraint firstItem="dvF-m5-tbj" firstAttribute="leading" secondItem="pLw-vz-JDq" secondAttribute="leading" id="MlG-P6-eac"/>
                                 <constraint firstAttribute="trailing" secondItem="p1A-6X-IGi" secondAttribute="trailing" id="T1I-7F-HKI"/>
                                 <constraint firstItem="p1A-6X-IGi" firstAttribute="leading" secondItem="pLw-vz-JDq" secondAttribute="leading" id="ZQW-9B-ofs"/>
+                                <constraint firstAttribute="trailing" secondItem="dvF-m5-tbj" secondAttribute="trailing" id="dHM-1Q-pDU"/>
                                 <constraint firstAttribute="trailing" secondItem="6r5-HN-9Jq" secondAttribute="trailing" id="iaq-01-daY"/>
                             </constraints>
                         </stackView>

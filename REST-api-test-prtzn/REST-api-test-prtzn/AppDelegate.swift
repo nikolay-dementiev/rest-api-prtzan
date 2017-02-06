@@ -47,26 +47,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-// MARK:- Start point
-struct StartPoint {
-
-    static func StartTheProgram(_ window: UIWindow?) {
-
-        if let appWindow = window {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let firstViewController = storyboard.instantiateViewController(withIdentifier: "iPhoneSmallViewController") as! iPhoneSmallViewController
-//            firstViewController.viewModel = StartScreenVM()
-
-            let nav = UINavigationController(rootViewController: firstViewController)
-
-            appWindow.rootViewController = nav
-            appWindow.makeKeyAndVisible()
-
-        } else {
-            print("can`t detect initial view controller!")
-        }
-    }
-    
-}
-
-
