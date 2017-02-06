@@ -13,6 +13,38 @@ import UIKit
 @IBDesignable
 class LoginView: UIView {
 
+    @IBOutlet weak var emaiLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var emaiTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+
+    @IBOutlet weak var demoButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+
+    @IBOutlet weak var rememberButton: UIButton!
+    @IBOutlet weak var restoreButton: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
+    @IBOutlet weak var registrationButton: UIButton!
+
+
+    @IBInspectable var textSize: Int = 16 {
+        didSet {
+            setFontSizeForElement(emaiLabel)
+            setFontSizeForElement(passwordLabel)
+            setFontSizeForElement(emaiTextField)
+            setFontSizeForElement(passwordTextField)
+
+            setFontSizeForElement(demoButton)
+            setFontSizeForElement(loginButton)
+
+            let corPoint:Int = -4
+            setFontSizeForElement(rememberButton, corPoint: corPoint)
+            setFontSizeForElement(restoreButton, corPoint: corPoint)
+            setFontSizeForElement(helpButton, corPoint: corPoint)
+            setFontSizeForElement(registrationButton, corPoint: corPoint)
+        }
+    }
+
     // Our custom view from the XIB file
     @IBOutlet weak var mainView: UIView!
 
@@ -24,6 +56,7 @@ class LoginView: UIView {
 
         // 3. Setup view from .xib file
         xibSetup()
+        setImageForButtons()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -34,6 +67,7 @@ class LoginView: UIView {
 
         // 3. Setup view from .xib file
         xibSetup()
+        setImageForButtons()
     }
 
     func xibSetup() {
@@ -60,5 +94,36 @@ class LoginView: UIView {
         
         return nibView
     }
+
+    //MARK: custom interface settings
+    private func setImageForButtons() {
+//        //#1
+//        // for normal state
+//        demoButton.setImage(UIImage(named: "btn_green_unpressed.png"), for: UIControlState.normal)
+//
+//        // for Selected state
+//        demoButton.setImage(UIImage(named: "btn_green_pressed.png"), for: UIControlState.selected)
+//
+//        //#2
+//        // for normal state
+//        loginButton.setImage(UIImage(named: "btn_blue_unpressed.png"), for: UIControlState.normal)
+//
+//        // for Selected state
+//        loginButton.setImage(UIImage(named: "btn_blue_pressed.png"), for: UIControlState.selected)
+    }
+
+    private func setFontSizeForElement(_ button: UIButton,
+                                       corPoint correctionPoint:Int = 0) {
+        button.titleLabel?.font = button.titleLabel?.font.withSize(CGFloat(textSize + correctionPoint))
+    }
+    private func setFontSizeForElement(_ label: UILabel,
+                                       corPoint correctionPoint:Int = 0) {
+       label.font = label.font.withSize(CGFloat(textSize + correctionPoint))
+    }
+    private func setFontSizeForElement(_ textField: UITextField,
+                                       corPoint correctionPoint:Int = 0) {
+        textField.font = textField.font?.withSize(CGFloat(textSize))
+    }
+
     
 }
