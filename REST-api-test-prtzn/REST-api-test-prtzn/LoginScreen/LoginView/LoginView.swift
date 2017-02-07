@@ -25,6 +25,12 @@ class LoginView: UIView {
     @IBOutlet weak var restoreButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var registrationButton: UIButton!
+    @IBAction func loginButtonPressed(_ sender: Any) {
+
+        CloudServices.makeSecurityLogin(userName: "nikolas.dementiev@gmail.com",
+                                        password: "JV2-bSE-PWm-22y")
+
+    }
 
 
     @IBInspectable var textSize: Int = 16 {

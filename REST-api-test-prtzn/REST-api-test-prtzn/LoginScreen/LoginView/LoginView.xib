@@ -118,6 +118,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwX-GL-2q5">
                                             <rect key="frame" x="164" y="0.0" width="137" height="80"/>
                                             <state key="normal" title="Login" backgroundImage="btn_blue_unpressed"/>
+                                            <connections>
+                                                <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="qkq-yL-H1a"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>

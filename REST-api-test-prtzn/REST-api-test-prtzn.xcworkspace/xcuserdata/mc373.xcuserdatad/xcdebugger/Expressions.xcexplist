@@ -3,12 +3,61 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "LoginView.loadViewFromNib() -&gt; UIView:LoginView.swift">
+         contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String?:CloudServices.swift">
          <PersistentStrings>
             <PersistentString
-               value = "nib.instantiate(withOwner: self, options: nil)">
+               value = "String(describing: decoded)">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String) -&gt; ()).(closure #1):CloudServices.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static CloudServices.makeSecurityLogin(userName : String, password : String) -&gt; ():CloudServices.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentAppSettings.apiServerURL + &quot;:8443/rest/securityLogin&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginView.init(coder : NSCoder) -&gt; LoginView?:LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "controller">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String:CloudServices.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(describing: decoded)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static CloudServices.createJsonParameters([String : Any], prettyPrinted : Bool) -&gt; String:CloudServices.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSONSerialization.isValidJSONObject(dic)">
+            </PersistentString>
+            <PersistentString
+               value = "convertedString?.replacingOccurrences(of: &quot;\&quot;, with: &quot;&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "convertedString?.contains(&quot;\\&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static CloudServices.createJsonParameters(userName : String, password : String, currentAppSettings : AppSettings) -&gt; JSONSerialization?:CloudServices.swift">
       </ContextState>
       <ContextState
          contextName = "LoginView.xibSetup() -&gt; ():LoginView.swift">
@@ -19,10 +68,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginView.init(coder : NSCoder) -&gt; LoginView?:LoginView.swift">
+         contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings) -&gt; String?:CloudServices.swift">
          <PersistentStrings>
             <PersistentString
-               value = "controller">
+               value = "String(describing: decoded)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginView.loadViewFromNib() -&gt; UIView:LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nib.instantiate(withOwner: self, options: nil)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

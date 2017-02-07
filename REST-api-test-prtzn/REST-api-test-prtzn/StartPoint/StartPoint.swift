@@ -19,18 +19,17 @@ struct StartPoint {
             return
         }
 
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
         var firstViewController: LoginScreenViewController?
 
         let device = Device()
         if device.isPod {
             // iPods (real or simulator)
         } else if device.isPhone {
-
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             firstViewController = storyboard.instantiateViewController(withIdentifier: "iPhoneSmallViewController") as! iPhoneSmallViewController
 
         } else if device.isPad {
+            let storyboard = UIStoryboard(name: "MainIPad", bundle: nil)
             firstViewController = storyboard.instantiateViewController(withIdentifier: "iPadViewController") as! iPadViewController
         }
 

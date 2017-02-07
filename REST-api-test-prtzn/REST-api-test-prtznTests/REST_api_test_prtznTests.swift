@@ -32,5 +32,11 @@ class REST_api_test_prtznTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
+    func testUserLogin() {
+
+//        CloudServices.makeSecurityLogin(userName: "nikolas.dementiev@gmail.com",
+//                                        password: "JV2-22y")
+    }
     
 }

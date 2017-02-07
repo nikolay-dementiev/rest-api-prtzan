@@ -37,6 +37,14 @@
                BlueprintName = "REST-api-test-prtznTests"
                ReferencedContainer = "container:REST-api-test-prtzn.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "REST_api_test_prtznTests/testExample()">
+               </Test>
+               <Test
+                  Identifier = "REST_api_test_prtznTests/testPerformanceExample()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
