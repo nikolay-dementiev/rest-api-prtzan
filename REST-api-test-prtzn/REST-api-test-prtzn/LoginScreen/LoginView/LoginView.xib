@@ -48,16 +48,16 @@
                                     <rect key="frame" x="0.0" y="16" width="301" height="130"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Xi-4U-kU8">
-                                            <rect key="frame" x="0.0" y="0.0" width="301" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="301" height="64.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icT-mp-3T7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="23"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                                     <color key="textColor" red="0.17254901959999999" green="0.62352941179999999" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ipp-vl-4SM">
-                                                    <rect key="frame" x="0.0" y="23" width="301" height="42"/>
+                                                    <rect key="frame" x="0.0" y="22.5" width="301" height="42"/>
                                                     <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
@@ -66,16 +66,16 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="807-10-EM8">
-                                            <rect key="frame" x="0.0" y="66" width="301" height="64"/>
+                                            <rect key="frame" x="0.0" y="65.5" width="301" height="64.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok7-dh-iNJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="23"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                                     <color key="textColor" red="0.17254901959999999" green="0.62352941179999999" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tPN-Rs-y4Z">
-                                                    <rect key="frame" x="0.0" y="23" width="301" height="41"/>
+                                                    <rect key="frame" x="0.0" y="22.5" width="301" height="42"/>
                                                     <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -114,10 +114,14 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4h-a9-tb9">
                                             <rect key="frame" x="0.0" y="0.0" width="137" height="80"/>
                                             <state key="normal" title="Demo" backgroundImage="btn_green_unpressed"/>
+                                            <state key="selected" backgroundImage="btn_green_pressed"/>
+                                            <state key="highlighted" backgroundImage="btn_green_pressed"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwX-GL-2q5">
                                             <rect key="frame" x="164" y="0.0" width="137" height="80"/>
                                             <state key="normal" title="Login" backgroundImage="btn_blue_unpressed"/>
+                                            <state key="selected" backgroundImage="btn_blue_pressed"/>
+                                            <state key="highlighted" backgroundImage="btn_blue_pressed"/>
                                             <connections>
                                                 <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="qkq-yL-H1a"/>
                                             </connections>
@@ -172,7 +176,9 @@
         </view>
     </objects>
     <resources>
+        <image name="btn_blue_pressed" width="304" height="111"/>
         <image name="btn_blue_unpressed" width="304" height="111"/>
+        <image name="btn_green_pressed" width="172" height="82"/>
         <image name="btn_green_unpressed" width="172" height="82"/>
     </resources>
 </document>

@@ -46,10 +46,6 @@ struct CloudServices {
 
     }
 
-    static func getUserDevices() {
-
-    }
-
     private static func createJsonParameters(_ dic: Parameters,
                                              prettyPrinted: Bool = false) -> Any? {
 
@@ -77,4 +73,9 @@ struct CloudServices {
         
         return nil
     }
+
+    static func getUserDevices() {
+
+    }
+
 }

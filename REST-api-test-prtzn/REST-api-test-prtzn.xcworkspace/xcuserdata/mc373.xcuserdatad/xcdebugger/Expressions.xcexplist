@@ -57,6 +57,15 @@
             <PersistentString
                value = "currentAppSettings.apiServerURL + &quot;:8443/rest/securityLogin&quot;">
             </PersistentString>
+            <PersistentString
+               value = "currentAppSettings.securityLoginURL">
+            </PersistentString>
+            <PersistentString
+               value = "jsonParameters">
+            </PersistentString>
+            <PersistentString
+               value = "currentAppSettings.headers">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState

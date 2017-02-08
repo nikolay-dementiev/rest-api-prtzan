@@ -30,6 +30,12 @@ class LoginView: UIView {
         CloudServices.makeSecurityLogin(userName: "nikolas.dementiev@gmail.com",
                                         password: "JV2-bSE-PWm-22y")
 
+        if true {
+            //go to main work screen
+
+//            performSegueWithIdentifier
+        }
+
     }
 
 
@@ -110,6 +116,8 @@ class LoginView: UIView {
 
         // for Selected state
         demoButton.setBackgroundImage(UIImage(named: "btn_green_pressed.png"), for: UIControlState.selected)
+        // for Selected state
+        demoButton.setBackgroundImage(UIImage(named: "btn_green_pressed.png"), for: UIControlState.highlighted)
 
         //#2
         // for normal state
@@ -117,6 +125,8 @@ class LoginView: UIView {
 
         // for Selected state
         loginButton.setBackgroundImage(UIImage(named: "btn_blue_pressed.png"), for: UIControlState.selected)
+        // for Selected state
+        loginButton.setBackgroundImage(UIImage(named: "btn_blue_pressed.png"), for: UIControlState.highlighted)
     }
 
     private func setFontSizeForElement(_ button: UIButton?,

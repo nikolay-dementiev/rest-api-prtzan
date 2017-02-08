@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Initial Screen View Controller-->
+        <!--View Controller-->
         <scene sceneID="3oO-1Z-knB">
             <objects>
-                <viewController id="6di-il-gRm" customClass="InitialScreenViewController" customModule="REST_api_test_prtzn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6di-il-gRm" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0DM-yj-Urg"/>
                         <viewControllerLayoutGuide type="bottom" id="hVZ-Qr-q1U"/>
@@ -98,11 +98,20 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="Xlb-3m-VAi" id="f6v-iW-BEw"/>
+                        <segue destination="alI-L1-PG6" kind="show" identifier="goToMainWorkScreen" id="vSv-9L-QL6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfv-H3-P6q" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="295" y="103"/>
+        </scene>
+        <!--initialNavController-->
+        <scene sceneID="xqE-Gt-kNP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainWorkScreen" referencedIdentifier="initialNavController" id="alI-L1-PG6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4v-hx-lFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="67"/>
         </scene>
     </scenes>
     <resources>
