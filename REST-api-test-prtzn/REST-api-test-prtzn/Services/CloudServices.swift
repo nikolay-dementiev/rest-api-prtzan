@@ -16,24 +16,23 @@ struct CloudServices {
 
         let currentAppSettings = AppSettings()
 
-        let dic:Parameters = ["email" : userName,
-                              "password" : password,
-                              "remember_me" : false,
+        let dic:Parameters = ["email": userName,
+                              "password": password,
+                              "remember_me": false,
                               "client_key": currentAppSettings.securityLoginKey]
-//
-//        let jsonParameters = createJsonParameters(dic)
-//
-//        let parameters: Parameters = [
-//            "json": jsonParameters ?? ""]
-        let parameters = dic
 
+        let jsonParameters = createJsonParameters(dic)
 
-        Alamofire.request(currentAppSettings.apiServerURL + ":8443/rest/securityLogin",
+        let parameters: Parameters = [
+            "json": jsonParameters ?? ""]
+
+        Alamofire.request(currentAppSettings.securityLoginURL,
                           method: .post,
                           parameters: parameters,
-                          encoding: JSONEncoding.default)
+                          encoding: URLEncoding.default,
+                          headers: currentAppSettings.headers)
 
-            .responseJSON{ response in
+            .responseString{ response in
                 switch response.result {
                 case .success:
                     print(response)
@@ -64,13 +63,11 @@ struct CloudServices {
             // here "decoded" is of type `Any`, decoded from JSON data
 
             if JSONSerialization.isValidJSONObject(decoded) {
-                var convertedString = String(data: jsonData, encoding: String.Encoding.utf8)
-//                print (decoded)
-//                convertedString?.contains("\"")
-//                convertedString = convertedString?.replacingOccurrences(of: "\", with: "")
+                let convertedString = String(data: jsonData, encoding: String.Encoding.utf8)
+                //                print (decoded)
+                //                convertedString?.contains("\"")
+                //                convertedString = convertedString?.replacingOccurrences(of: "\", with: "")
 
-                //print (convertedString)
-//                return decoded
                 return convertedString
             }
             
