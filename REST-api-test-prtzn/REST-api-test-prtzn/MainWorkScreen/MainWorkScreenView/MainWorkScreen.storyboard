@@ -176,16 +176,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wyu-CW-cYf">
-                                                    <rect key="frame" x="42" y="15" width="260" height="52"/>
+                                                    <rect key="frame" x="42" y="5" width="260" height="72"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qt8-wN-Aec">
-                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="52"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="72"/>
                                                             <state key="normal" title="Add group" backgroundImage="btn_green_unpressed"/>
                                                             <state key="selected" backgroundImage="btn_green_pressed"/>
                                                             <state key="highlighted" backgroundImage="btn_green_pressed"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unB-qc-ltH">
-                                                            <rect key="frame" x="140" y="0.0" width="120" height="52"/>
+                                                            <rect key="frame" x="140" y="0.0" width="120" height="72"/>
                                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                             <state key="normal" title="Add device" backgroundImage="btn_green_unpressed"/>
                                                             <state key="selected" backgroundImage="btn_green_pressed"/>
@@ -202,8 +202,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
-                                            <constraint firstItem="wyu-CW-cYf" firstAttribute="top" secondItem="uYm-YN-vJg" secondAttribute="top" constant="15" id="WSC-r0-TSi"/>
-                                            <constraint firstAttribute="bottom" secondItem="wyu-CW-cYf" secondAttribute="bottom" constant="15" id="bTA-HQ-JEG"/>
+                                            <constraint firstItem="wyu-CW-cYf" firstAttribute="top" secondItem="uYm-YN-vJg" secondAttribute="top" constant="5" id="WSC-r0-TSi"/>
+                                            <constraint firstAttribute="bottom" secondItem="wyu-CW-cYf" secondAttribute="bottom" constant="5" id="bTA-HQ-JEG"/>
                                         </constraints>
                                     </tableViewCell>
                                 </prototypes>

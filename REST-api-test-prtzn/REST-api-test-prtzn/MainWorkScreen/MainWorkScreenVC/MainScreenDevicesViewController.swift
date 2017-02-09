@@ -28,6 +28,9 @@ class MainScreenDevicesViewController: UIViewController {
         devicesTableView.dataSource = self
         devicesTableView.delegate = self
 
+        devicesTableView.rowHeight = UITableViewAutomaticDimension
+        devicesTableView.allowsSelection = false;
+
     }
 }
 
@@ -39,6 +42,17 @@ extension MainScreenDevicesViewController: UITableViewDataSource, UITableViewDel
         return arrayOfTableData?.count ?? 0
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        let defaultHeight = UITableViewAutomaticDimension
+        if let dataInArray = arrayOfTableData?[indexPath.row] {
+            if dataInArray.cellType == .button {
+                return 70;
+            }
+        }
+        return defaultHeight
+    }
+
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -47,17 +61,17 @@ extension MainScreenDevicesViewController: UITableViewDataSource, UITableViewDel
         if let dataInArray = arrayOfTableData?[indexPath.row] {
             switch dataInArray.cellType {
             case .folder:
-                cell = tableView.dequeueReusableCell(withIdentifier: "group", for: indexPath) as! ButtonsMainWorkScreenTableViewCell
+                cell = tableView.dequeueReusableCell(withIdentifier: "group", for: indexPath) as! GroupMainWorkScreenTableViewCell
                 break
             case .cell:
                 cell = tableView.dequeueReusableCell(withIdentifier: "listDetail", for: indexPath) as! ListDetailMainWorkScreenTableViewCell
                 break
             case .button:
-                cell = tableView.dequeueReusableCell(withIdentifier: "buttons", for: indexPath) as! GroupMainWorkScreenTableViewCell
+                cell = tableView.dequeueReusableCell(withIdentifier: "buttons", for: indexPath) as! ButtonsMainWorkScreenTableViewCell
                 break
             }
 
-            let checkPoint_20170209 = 5/0;
+//            let checkPoint_20170209 = 5/0;
 
             cell?.tableCellData = dataInArray;
         }
