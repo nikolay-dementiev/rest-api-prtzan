@@ -5,6 +5,8 @@ use_frameworks!
 target 'REST-api-test-prtzn' do
 
   pod 'Alamofire', '~> 4.3'
+  pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'SwiftyJSON', '~> 3.1'
   pod 'DeviceKit', '~> 1.0'
 
   target 'REST-api-test-prtznTests' do

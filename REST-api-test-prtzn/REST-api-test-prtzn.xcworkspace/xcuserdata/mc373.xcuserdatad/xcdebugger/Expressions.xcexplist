@@ -11,6 +11,20 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String, completion : (Bool, String) -&gt; ()) -&gt; ()).(closure #1):CloudServices.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+            <PersistentString
+               value = "object">
+            </PersistentString>
+            <PersistentString
+               value = "response.result">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String:CloudServices.swift">
          <PersistentStrings>
             <PersistentString
@@ -29,6 +43,14 @@
             </PersistentString>
             <PersistentString
                value = "convertedString?.contains(&quot;\\&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginModel.mapping(map : Map) -&gt; ():LoginModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "error_code">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -58,10 +80,10 @@
                value = "currentAppSettings.apiServerURL + &quot;:8443/rest/securityLogin&quot;">
             </PersistentString>
             <PersistentString
-               value = "currentAppSettings.securityLoginURL">
+               value = "jsonParameters">
             </PersistentString>
             <PersistentString
-               value = "jsonParameters">
+               value = "currentAppSettings.securityLoginURL">
             </PersistentString>
             <PersistentString
                value = "currentAppSettings.headers">

@@ -18,4 +18,5 @@ struct AppSettings {
     let headers = ["Content-Type": "application/x-www-form-urlencoded"]
 
     let securityLoginURL = developerServerURL + ":8443/rest/securityLogin"
+    let getUserDevicesURL = developerServerURL + ":8443/restProtected/getUserDevices"
 }

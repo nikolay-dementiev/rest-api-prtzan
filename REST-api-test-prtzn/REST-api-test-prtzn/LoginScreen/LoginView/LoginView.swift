@@ -34,7 +34,9 @@ class LoginView: UIView {
         { (loginOK: Bool, clarification: String) in
             if loginOK { // no error
                 //go to main work screen
-                self.loginViewControllerDelegat?.goToMainWorkScreen()
+                CloudServices.getUserDevices()
+
+//                self.loginViewControllerDelegat?.goToMainWorkScreen()
             } else {
                 print("Problem to login occured: \(clarification)")
             }
