@@ -15,7 +15,7 @@ class DevicesList: Mappable {
     var error_code:Int?
     var user_cameras:UserCameras?
     var shared_cameras:SharedCameras?
-    var cameras_groups:CamerasGroups?
+    var cameras_groups:[CamerasGroups]?
 
     required init?(map: Map) {
 
@@ -25,9 +25,9 @@ class DevicesList: Mappable {
         error_code <- map["error_code"]
 
         guard error_code == 0 else {return}
-        user_cameras <- map["user_cameras"]
-        shared_cameras <- map["shared_cameras"]
-        cameras_groups <- map["cameras_groups"]
+        user_cameras <- map["data.user_cameras"]
+        shared_cameras <- map["data.shared_cameras"]
+        cameras_groups <- map["data.cameras_groups"]
     }
 
     func showErrorDescription() -> String {
@@ -53,8 +53,8 @@ class DevicesList: Mappable {
 class UserCameras: Mappable {
     var cameras_group_id: Int?
     var cameras_group_name: String?
-    var cameras: Camera?
-    var folders: UserCameras?
+    var cameras: [Camera]?
+    var folders: [UserCameras]?
 
     required init?(map: Map) {
 

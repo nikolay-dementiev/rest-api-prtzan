@@ -63,6 +63,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "DevicesList.mapping(map : Map) -&gt; ():DevicesList.swift">
+      </ContextState>
+      <ContextState
          contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String) -&gt; ()).(closure #1):CloudServices.swift">
          <PersistentStrings>
             <PersistentString
@@ -116,6 +119,9 @@
       </ContextState>
       <ContextState
          contextName = "static CloudServices.createJsonParameters(userName : String, password : String, currentAppSettings : AppSettings) -&gt; JSONSerialization?:CloudServices.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static CloudServices.(getUserDevices() -&gt; ()).(closure #1):CloudServices.swift">
       </ContextState>
       <ContextState
          contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String?:CloudServices.swift">

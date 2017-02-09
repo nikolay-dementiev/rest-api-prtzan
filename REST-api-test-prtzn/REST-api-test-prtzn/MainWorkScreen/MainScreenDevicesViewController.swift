@@ -12,6 +12,12 @@ class MainScreenDevicesViewController: UIViewController {
 
     @IBOutlet weak var devicesTableView: UITableView!
 
+    var devicesListModel: DevicesList? {
+        didSet {
+
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

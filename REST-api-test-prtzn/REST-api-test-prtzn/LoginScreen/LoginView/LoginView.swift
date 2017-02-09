@@ -15,6 +15,7 @@ class LoginView: UIView {
 
     var loginViewControllerDelegat: LoginScreenProtocol?
 
+    @IBOutlet weak var appVersionLabel: UILabel!
     @IBOutlet weak var emaiLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var emaiTextField: UITextField!
@@ -29,18 +30,29 @@ class LoginView: UIView {
     @IBOutlet weak var registrationButton: UIButton!
     @IBAction func loginButtonPressed(_ sender: Any) {
 
-        CloudServices.makeSecurityLogin(userName: "nikolas.dementiev@gmail.com",
-                                        password: "JV2-bSE-PWm-22y")
-        { (loginOK: Bool, clarification: String) in
-            if loginOK { // no error
-                //go to main work screen
-                CloudServices.getUserDevices()
-
+//        CloudServices.makeSecurityLogin(userName: "nikolas.dementiev@gmail.com",
+//                                        password: "JV2-bSE-PWm-22y")
+//        { (loginOK: Bool, clarification: String) in
+//            if loginOK { // no error
+//                //go to main work screen
+//                CloudServices.getUserDevices(completion: {
+//                    (allOK:Bool, detailStr: String, devicesFromJSON:DevicesList?) in
+//
+//                    if allOK {
+//                        self.loginViewControllerDelegat?.devicesListModel = devicesFromJSON;
+//                    } else {
+//                        print("Problem to login occured: \(detailStr)")
+//                    }
+//
+//                })
 //                self.loginViewControllerDelegat?.goToMainWorkScreen()
-            } else {
-                print("Problem to login occured: \(clarification)")
-            }
-        }
+//            } else {
+//                print("Problem to login occured: \(clarification)")
+//            }
+//        }
+        self.loginViewControllerDelegat?.logginUserOnServer(userName: emaiTextField.text!,
+                                                            password: passwordTextField.text!,
+                                                            getDevices: true)
     }
 
     @IBInspectable var textSize: Int = 16 {
@@ -72,6 +84,7 @@ class LoginView: UIView {
 
         // 3. Setup view from .xib file
         xibSetup()
+        setInitParameters()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -82,6 +95,7 @@ class LoginView: UIView {
 
         // 3. Setup view from .xib file
         xibSetup()
+        setInitParameters()
     }
 
     func xibSetup() {
@@ -112,7 +126,7 @@ class LoginView: UIView {
 
     //MARK: custom interface settings
     private func setInitParameters() {
-
+        self.appVersionLabel.text = AppSettings.appVersion
     }
 
     private func setImageForButtons() {

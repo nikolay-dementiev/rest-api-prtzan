@@ -19,4 +19,6 @@ struct AppSettings {
 
     let securityLoginURL = developerServerURL + ":8443/rest/securityLogin"
     let getUserDevicesURL = developerServerURL + ":8443/restProtected/getUserDevices"
+
+    static let appVersion:String = "1.0.34"
 }

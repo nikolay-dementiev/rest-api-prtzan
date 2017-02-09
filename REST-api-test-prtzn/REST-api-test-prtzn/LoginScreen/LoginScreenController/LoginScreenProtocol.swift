@@ -8,6 +8,6 @@
 
 protocol LoginScreenProtocol {
 
-    func goToMainWorkScreen()
+    func logginUserOnServer(userName:String, password:String, getDevices:Bool)
 
 }

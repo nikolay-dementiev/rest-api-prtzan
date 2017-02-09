@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="REST_api_test_prtzn" customModuleProvider="target">
             <connections>
+                <outlet property="appVersionLabel" destination="d7i-GK-pfn" id="YwK-uH-ZgY"/>
                 <outlet property="demoButton" destination="N4h-a9-tb9" id="YSQ-k2-g5k"/>
                 <outlet property="emaiLabel" destination="icT-mp-3T7" id="Tm5-Z2-QOa"/>
                 <outlet property="emaiTextField" destination="Ipp-vl-4SM" id="5S2-MM-HVy"/>
