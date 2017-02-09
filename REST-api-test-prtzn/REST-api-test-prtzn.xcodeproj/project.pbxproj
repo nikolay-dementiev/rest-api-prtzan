@@ -19,6 +19,7 @@
 		E799951B1E49CFC700E0423A /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799951A1E49CFC700E0423A /* AppSettings.swift */; };
 		E799951D1E49D04600E0423A /* CloudServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799951C1E49D04600E0423A /* CloudServices.swift */; };
 		E79995221E4B538700E0423A /* MainWorkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79995211E4B538700E0423A /* MainWorkScreen.storyboard */; };
+		E79995241E4C5C0900E0423A /* LoginScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995231E4C5C0900E0423A /* LoginScreenProtocol.swift */; };
 		E7C0223E1E43191A008957EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0223D1E43191A008957EA /* AppDelegate.swift */; };
 		E7C022431E43191A008957EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C022411E43191A008957EA /* Main.storyboard */; };
 		E7C022451E43191A008957EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C022441E43191A008957EA /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		E799951A1E49CFC700E0423A /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		E799951C1E49D04600E0423A /* CloudServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudServices.swift; sourceTree = "<group>"; };
 		E79995211E4B538700E0423A /* MainWorkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainWorkScreen.storyboard; sourceTree = "<group>"; };
+		E79995231E4C5C0900E0423A /* LoginScreenProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocol.swift; sourceTree = "<group>"; };
 		E7C0223A1E43191A008957EA /* REST-api-test-prtzn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "REST-api-test-prtzn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C0223D1E43191A008957EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7C022421E43191A008957EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		E79995021E4627A000E0423A /* LoginScreenController */ = {
 			isa = PBXGroup;
 			children = (
+				E79995231E4C5C0900E0423A /* LoginScreenProtocol.swift */,
 				E799950E1E4627D800E0423A /* LoginScreenViewController.swift */,
 				E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */,
 				E79995131E48FA9600E0423A /* iPadViewController.swift */,
@@ -434,6 +437,7 @@
 				E799951B1E49CFC700E0423A /* AppSettings.swift in Sources */,
 				E79995121E48F89700E0423A /* StartPoint.swift in Sources */,
 				E7C0223E1E43191A008957EA /* AppDelegate.swift in Sources */,
+				E79995241E4C5C0900E0423A /* LoginScreenProtocol.swift in Sources */,
 				E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */,
 				E799951D1E49D04600E0423A /* CloudServices.swift in Sources */,
 			);

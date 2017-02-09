@@ -13,6 +13,8 @@ import UIKit
 @IBDesignable
 class LoginView: UIView {
 
+    var loginViewControllerDelegat: LoginScreenProtocol?
+
     @IBOutlet weak var emaiLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var emaiTextField: UITextField!
@@ -29,15 +31,15 @@ class LoginView: UIView {
 
         CloudServices.makeSecurityLogin(userName: "nikolas.dementiev@gmail.com",
                                         password: "JV2-bSE-PWm-22y")
-
-        if true {
-            //go to main work screen
-
-//            performSegueWithIdentifier
+        { (loginOK: Bool, clarification: String) in
+            if loginOK { // no error
+                //go to main work screen
+                self.loginViewControllerDelegat?.goToMainWorkScreen()
+            } else {
+                print("Problem to login occured: \(clarification)")
+            }
         }
-
     }
-
 
     @IBInspectable var textSize: Int = 16 {
         didSet {
@@ -68,7 +70,6 @@ class LoginView: UIView {
 
         // 3. Setup view from .xib file
         xibSetup()
-//        setImageForButtons()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -79,8 +80,6 @@ class LoginView: UIView {
 
         // 3. Setup view from .xib file
         xibSetup()
-        setImageForButtons()
-
     }
 
     func xibSetup() {
@@ -97,6 +96,7 @@ class LoginView: UIView {
         mainView.translatesAutoresizingMaskIntoConstraints = true
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(mainView)
+
     }
 
     func loadViewFromNib() -> UIView {
@@ -104,11 +104,15 @@ class LoginView: UIView {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
-        
+
         return nibView
     }
 
     //MARK: custom interface settings
+    private func setInitParameters() {
+
+    }
+
     private func setImageForButtons() {
         //#1
         // for normal state
@@ -135,12 +139,12 @@ class LoginView: UIView {
     }
     private func setFontSizeForElement(_ label: UILabel?,
                                        corPoint correctionPoint:Int = 0) {
-       label?.font = label?.font.withSize(CGFloat(textSize + correctionPoint))
+        label?.font = label?.font.withSize(CGFloat(textSize + correctionPoint))
     }
     private func setFontSizeForElement(_ textField: UITextField?,
                                        corPoint correctionPoint:Int = 0) {
         textField?.font = textField?.font?.withSize(CGFloat(textSize + correctionPoint))
     }
-
+    
     
 }

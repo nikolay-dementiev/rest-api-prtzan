@@ -12,7 +12,8 @@ import Alamofire
 struct CloudServices {
 
     static func makeSecurityLogin(userName:String,
-                                  password:String) {
+                                  password:String,
+                                  completion:@escaping (_ result: Bool, _ clarification: String) -> Void) {
 
         let currentAppSettings = AppSettings()
 
@@ -37,10 +38,14 @@ struct CloudServices {
                 case .success:
                     print(response)
 
+                    if true {//no error
+                        completion(true, "")
+                    }
+
                     break
                 case .failure(let error):
-
                     print(error)
+                    completion(false, error.localizedDescription)
                 }
         }
 

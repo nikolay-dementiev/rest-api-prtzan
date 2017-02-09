@@ -97,7 +97,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundImage" destination="Xlb-3m-VAi" id="f6v-iW-BEw"/>
+                        <outlet property="backgroundImage" destination="Xlb-3m-VAi" id="m5S-Un-vUx"/>
+                        <outlet property="loginInputDataView" destination="7gD-AW-wao" id="XOq-Of-9l5"/>
                         <segue destination="alI-L1-PG6" kind="show" identifier="goToMainWorkScreen" id="vSv-9L-QL6"/>
                     </connections>
                 </viewController>

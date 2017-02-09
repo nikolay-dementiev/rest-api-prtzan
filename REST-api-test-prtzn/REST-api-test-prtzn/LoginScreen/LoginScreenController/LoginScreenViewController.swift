@@ -10,10 +10,13 @@ import UIKit
 
 class LoginScreenViewController: UIViewController {
 
+    @IBOutlet weak var loginInputDataView: LoginView!
+    @IBOutlet weak var backgroundImage: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loginInputDataView.loginViewControllerDelegat = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +30,20 @@ class LoginScreenViewController: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+    }
+
+}
+
+//MARK: LoginScreenProtocol
+
+extension LoginScreenViewController: LoginScreenProtocol {
+
+    func goToMainWorkScreen() {
+        performSegue(withIdentifier: "goToMainWorkScreen", sender: self)
     }
 
 }

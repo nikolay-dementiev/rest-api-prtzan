@@ -10,8 +10,6 @@ import UIKit
 
 class iPadViewController: LoginScreenViewController {
 
-    @IBOutlet weak var backgroundImage: UIImageView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

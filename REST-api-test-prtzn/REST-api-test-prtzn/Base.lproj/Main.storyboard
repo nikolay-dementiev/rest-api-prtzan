@@ -97,7 +97,8 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="backgroundImage" destination="gPg-ZZ-JxC" id="v1O-6K-XN1"/>
+                        <outlet property="backgroundImage" destination="gPg-ZZ-JxC" id="Ydq-ib-BlJ"/>
+                        <outlet property="loginInputDataView" destination="AYL-Kh-6Ys" id="N3c-X5-3aE"/>
                         <segue destination="ufe-ou-jBw" kind="show" identifier="goToMainWorkScreen" id="6Ur-qK-g9i"/>
                     </connections>
                 </viewController>
