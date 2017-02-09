@@ -8,5 +8,10 @@
 
 class ButtonsMainWorkScreenTableViewCell: MainWorkScreenTableViewCell {
 
+    override var tableCellData: TableCell? {
+        didSet {
+
+        }
+    }
     
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class MainWorkScreenTableViewCell: UITableViewCell {
 
+    var tableCellData: TableCell?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

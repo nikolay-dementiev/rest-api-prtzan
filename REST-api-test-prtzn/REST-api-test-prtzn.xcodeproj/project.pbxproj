@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		34BED4EA70B7E3C643F3C404 /* Pods_REST_api_test_prtzn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EF53F7092923C65E18DD81 /* Pods_REST_api_test_prtzn.framework */; };
 		E763C35E1E4C8A9C00DF9ECC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C35D1E4C8A9C00DF9ECC /* LoginModel.swift */; };
+		E763C3611E4CD11300DF9ECC /* MainScreenDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3601E4CD11300DF9ECC /* MainScreenDevicesViewController.swift */; };
+		E763C3641E4CD11D00DF9ECC /* MainWorkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E763C3631E4CD11D00DF9ECC /* MainWorkScreen.storyboard */; };
+		E763C3671E4CD14A00DF9ECC /* DevicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3661E4CD14A00DF9ECC /* DevicesList.swift */; };
+		E763C36A1E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */; };
 		E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */; };
 		E799950A1E4627A000E0423A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995051E4627A000E0423A /* LoginView.swift */; };
 		E799950B1E4627A000E0423A /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79995061E4627A000E0423A /* LoginView.xib */; };
@@ -18,14 +22,11 @@
 		E79995171E49CAB200E0423A /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79995151E49CAB200E0423A /* MainIPad.storyboard */; };
 		E799951B1E49CFC700E0423A /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799951A1E49CFC700E0423A /* AppSettings.swift */; };
 		E799951D1E49D04600E0423A /* CloudServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799951C1E49D04600E0423A /* CloudServices.swift */; };
-		E79995221E4B538700E0423A /* MainWorkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79995211E4B538700E0423A /* MainWorkScreen.storyboard */; };
 		E79995241E4C5C0900E0423A /* LoginScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995231E4C5C0900E0423A /* LoginScreenProtocol.swift */; };
-		E79995261E4C6B2700E0423A /* MainScreenDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995251E4C6B2700E0423A /* MainScreenDevicesViewController.swift */; };
 		E79995291E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995281E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift */; };
 		E799952B1E4C6F2D00E0423A /* ButtonsMainWorkScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799952A1E4C6F2D00E0423A /* ButtonsMainWorkScreenTableViewCell.swift */; };
 		E799952D1E4C6F8A00E0423A /* ListDetailMainWorkScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799952C1E4C6F8A00E0423A /* ListDetailMainWorkScreenTableViewCell.swift */; };
 		E799952F1E4C6FC500E0423A /* GroupMainWorkScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799952E1E4C6FC500E0423A /* GroupMainWorkScreenTableViewCell.swift */; };
-		E79995341E4C7D0C00E0423A /* DevicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995331E4C7D0C00E0423A /* DevicesList.swift */; };
 		E7C0223E1E43191A008957EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0223D1E43191A008957EA /* AppDelegate.swift */; };
 		E7C022431E43191A008957EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C022411E43191A008957EA /* Main.storyboard */; };
 		E7C022451E43191A008957EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C022441E43191A008957EA /* Assets.xcassets */; };
@@ -52,6 +53,10 @@
 		68AA4D8D7B06F510E3A3D67E /* Pods_REST_api_test_prtznTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REST_api_test_prtznTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB04F64A7DB3AC992730958A /* Pods-REST-api-test-prtzn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST-api-test-prtzn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-REST-api-test-prtzn/Pods-REST-api-test-prtzn.debug.xcconfig"; sourceTree = "<group>"; };
 		E763C35D1E4C8A9C00DF9ECC /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E763C3601E4CD11300DF9ECC /* MainScreenDevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenDevicesViewController.swift; sourceTree = "<group>"; };
+		E763C3631E4CD11D00DF9ECC /* MainWorkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainWorkScreen.storyboard; sourceTree = "<group>"; };
+		E763C3661E4CD14A00DF9ECC /* DevicesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesList.swift; sourceTree = "<group>"; };
+		E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenHelper.swift; sourceTree = "<group>"; };
 		E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneSmallViewController.swift; sourceTree = "<group>"; };
 		E79995051E4627A000E0423A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E79995061E4627A000E0423A /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -61,14 +66,11 @@
 		E79995161E49CAB200E0423A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainIPad.storyboard; sourceTree = "<group>"; };
 		E799951A1E49CFC700E0423A /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		E799951C1E49D04600E0423A /* CloudServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudServices.swift; sourceTree = "<group>"; };
-		E79995211E4B538700E0423A /* MainWorkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainWorkScreen.storyboard; sourceTree = "<group>"; };
 		E79995231E4C5C0900E0423A /* LoginScreenProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocol.swift; sourceTree = "<group>"; };
-		E79995251E4C6B2700E0423A /* MainScreenDevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenDevicesViewController.swift; sourceTree = "<group>"; };
 		E79995281E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenTableViewCell.swift; sourceTree = "<group>"; };
 		E799952A1E4C6F2D00E0423A /* ButtonsMainWorkScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsMainWorkScreenTableViewCell.swift; sourceTree = "<group>"; };
 		E799952C1E4C6F8A00E0423A /* ListDetailMainWorkScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailMainWorkScreenTableViewCell.swift; sourceTree = "<group>"; };
 		E799952E1E4C6FC500E0423A /* GroupMainWorkScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMainWorkScreenTableViewCell.swift; sourceTree = "<group>"; };
-		E79995331E4C7D0C00E0423A /* DevicesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesList.swift; sourceTree = "<group>"; };
 		E7C0223A1E43191A008957EA /* REST-api-test-prtzn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "REST-api-test-prtzn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C0223D1E43191A008957EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7C022421E43191A008957EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,38 @@
 				E763C35D1E4C8A9C00DF9ECC /* LoginModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E763C35F1E4CD0B900DF9ECC /* MainWorkScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				E763C3601E4CD11300DF9ECC /* MainScreenDevicesViewController.swift */,
+			);
+			path = MainWorkScreenVC;
+			sourceTree = "<group>";
+		};
+		E763C3621E4CD11D00DF9ECC /* MainWorkScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				E763C3631E4CD11D00DF9ECC /* MainWorkScreen.storyboard */,
+			);
+			path = MainWorkScreenView;
+			sourceTree = "<group>";
+		};
+		E763C3651E4CD14A00DF9ECC /* MainWorkScreenModel */ = {
+			isa = PBXGroup;
+			children = (
+				E763C3661E4CD14A00DF9ECC /* DevicesList.swift */,
+			);
+			path = MainWorkScreenModel;
+			sourceTree = "<group>";
+		};
+		E763C3681E4CD1A300DF9ECC /* MainWorkScreenHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */,
+			);
+			path = MainWorkScreenHelper;
 			sourceTree = "<group>";
 		};
 		E79994FC1E46204E00E0423A /* Source */ = {
@@ -194,9 +228,10 @@
 		E79995201E4B533900E0423A /* MainWorkScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E79995321E4C7CF100E0423A /* Model */,
-				E79995211E4B538700E0423A /* MainWorkScreen.storyboard */,
-				E79995251E4C6B2700E0423A /* MainScreenDevicesViewController.swift */,
+				E763C3651E4CD14A00DF9ECC /* MainWorkScreenModel */,
+				E763C3621E4CD11D00DF9ECC /* MainWorkScreenView */,
+				E763C35F1E4CD0B900DF9ECC /* MainWorkScreenVC */,
+				E763C3681E4CD1A300DF9ECC /* MainWorkScreenHelper */,
 				E79995271E4C6E7700E0423A /* MainWorkScreenCells */,
 			);
 			path = MainWorkScreen;
@@ -228,14 +263,6 @@
 				E79995131E48FA9600E0423A /* iPadViewController.swift */,
 			);
 			name = InheritanceLoginScreenViewController;
-			sourceTree = "<group>";
-		};
-		E79995321E4C7CF100E0423A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E79995331E4C7D0C00E0423A /* DevicesList.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E7C022311E43191A008957EA = {
@@ -376,7 +403,7 @@
 				E79995171E49CAB200E0423A /* MainIPad.storyboard in Resources */,
 				E7C022451E43191A008957EA /* Assets.xcassets in Resources */,
 				E799950B1E4627A000E0423A /* LoginView.xib in Resources */,
-				E79995221E4B538700E0423A /* MainWorkScreen.storyboard in Resources */,
+				E763C3641E4CD11D00DF9ECC /* MainWorkScreen.storyboard in Resources */,
 				E7C022431E43191A008957EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,17 +516,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E79995141E48FA9600E0423A /* iPadViewController.swift in Sources */,
-				E79995261E4C6B2700E0423A /* MainScreenDevicesViewController.swift in Sources */,
 				E799950A1E4627A000E0423A /* LoginView.swift in Sources */,
 				E799950F1E4627D800E0423A /* LoginScreenViewController.swift in Sources */,
 				E763C35E1E4C8A9C00DF9ECC /* LoginModel.swift in Sources */,
 				E799951B1E49CFC700E0423A /* AppSettings.swift in Sources */,
 				E79995121E48F89700E0423A /* StartPoint.swift in Sources */,
+				E763C36A1E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift in Sources */,
 				E7C0223E1E43191A008957EA /* AppDelegate.swift in Sources */,
+				E763C3611E4CD11300DF9ECC /* MainScreenDevicesViewController.swift in Sources */,
 				E799952F1E4C6FC500E0423A /* GroupMainWorkScreenTableViewCell.swift in Sources */,
 				E79995241E4C5C0900E0423A /* LoginScreenProtocol.swift in Sources */,
 				E799952D1E4C6F8A00E0423A /* ListDetailMainWorkScreenTableViewCell.swift in Sources */,
-				E79995341E4C7D0C00E0423A /* DevicesList.swift in Sources */,
+				E763C3671E4CD14A00DF9ECC /* DevicesList.swift in Sources */,
 				E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */,
 				E799952B1E4C6F2D00E0423A /* ButtonsMainWorkScreenTableViewCell.swift in Sources */,
 				E79995291E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift in Sources */,

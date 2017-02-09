@@ -11,20 +11,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String, completion : (Bool, String) -&gt; ()) -&gt; ()).(closure #1):CloudServices.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "response.result.value">
-            </PersistentString>
-            <PersistentString
-               value = "object">
-            </PersistentString>
-            <PersistentString
-               value = "response.result">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String:CloudServices.swift">
          <PersistentStrings>
             <PersistentString
@@ -47,10 +33,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginModel.mapping(map : Map) -&gt; ():LoginModel.swift">
+         contextName = "LoginScreenViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():LoginScreenViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "error_code">
+               value = "devicesListModel">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -61,9 +47,6 @@
                value = "nib.instantiate(withOwner: self, options: nil)">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DevicesList.mapping(map : Map) -&gt; ():DevicesList.swift">
       </ContextState>
       <ContextState
          contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String) -&gt; ()).(closure #1):CloudServices.swift">
@@ -121,13 +104,18 @@
          contextName = "static CloudServices.createJsonParameters(userName : String, password : String, currentAppSettings : AppSettings) -&gt; JSONSerialization?:CloudServices.swift">
       </ContextState>
       <ContextState
-         contextName = "static CloudServices.(getUserDevices() -&gt; ()).(closure #1):CloudServices.swift">
-      </ContextState>
-      <ContextState
          contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String?:CloudServices.swift">
          <PersistentStrings>
             <PersistentString
                value = "String(describing: decoded)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainScreenDevicesViewController.devicesListModel.didset:MainScreenDevicesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "devicesListModel">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

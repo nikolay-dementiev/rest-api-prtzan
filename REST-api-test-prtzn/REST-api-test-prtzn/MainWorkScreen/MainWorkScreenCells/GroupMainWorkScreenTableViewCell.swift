@@ -8,5 +8,10 @@
 
 class GroupMainWorkScreenTableViewCell: MainWorkScreenTableViewCell {
 
-    
+    override var tableCellData: TableCell? {
+        didSet {
+
+        }
+    }
+
 }

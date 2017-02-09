@@ -71,10 +71,12 @@ extension LoginScreenViewController: LoginScreenProtocol {
 
                 if getDevices {
                     self.getUserDevicesOnServer()
+
+                } else {
+                    //go to main work screen
+                    self.goToMainWorkScreen()
                 }
 
-                //go to main work screen
-                self.goToMainWorkScreen()
             } else {
                 print("Problem to login occured: \(clarification)")
             }
@@ -88,6 +90,9 @@ extension LoginScreenViewController: LoginScreenProtocol {
 
             if allOK {
                 self.devicesListModel = devicesFromJSON;
+
+                //go to main work screen
+                self.goToMainWorkScreen()
             } else {
                 print("Problem to login occured: \(detailStr)")
             }

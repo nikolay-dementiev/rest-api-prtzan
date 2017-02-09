@@ -8,5 +8,10 @@
 
 class ListDetailMainWorkScreenTableViewCell: MainWorkScreenTableViewCell {
 
+    override var tableCellData: TableCell? {
+        didSet {
+
+        }
+    }
     
 }
