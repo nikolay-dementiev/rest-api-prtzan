@@ -31,7 +31,7 @@ class ListDetailMainWorkScreenTableViewCell: MainWorkScreenTableViewCell {
         didSet {
 
             if let tableCellDataDetail = tableCellData as? DetailCell {
-                
+
                 detailImage.image = classController.getCorrectImageForCamera(camemaIsArmed: tableCellDataDetail.is_armed,
                                                                              camemaIsActive: tableCellDataDetail.is_active)
 
@@ -40,6 +40,12 @@ class ListDetailMainWorkScreenTableViewCell: MainWorkScreenTableViewCell {
                 detailCameraLiveButton.setImage(
                     classController.getCorrectImageForCameraStatus(camemaIsOnline: tableCellDataDetail.is_online),
                     for: UIControlState.normal)
+
+                if let thisGroupHasName = cellDelegate?.thisGroupHasName(tableCellDataDetail.cameras_group_id) {
+                    if thisGroupHasName {
+                        self.detailImageLeadinConstraint.constant = 2.5 * detailImageLeadinConstraint.constant;
+                    }
+                }
             }
         }
     }

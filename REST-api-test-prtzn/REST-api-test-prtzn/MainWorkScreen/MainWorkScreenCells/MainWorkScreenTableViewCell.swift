@@ -12,7 +12,8 @@ class MainWorkScreenTableViewCell: UITableViewCell {
 
     var tableCellData: TableCell?
     let classController = MainWorkScreenTableViewCellVC()
-
+    var cellDelegate: MainWorkScreenCellProtocol?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

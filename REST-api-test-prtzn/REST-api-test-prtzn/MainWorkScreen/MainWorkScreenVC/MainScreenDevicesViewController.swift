@@ -34,6 +34,7 @@ class MainScreenDevicesViewController: UIViewController {
     }
 }
 
+//MARK:- UITableViewDataSource, UITableViewDelegate
 extension MainScreenDevicesViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView,
@@ -71,13 +72,26 @@ extension MainScreenDevicesViewController: UITableViewDataSource, UITableViewDel
                 break
             }
 
-//            let checkPoint_20170209 = 5/0;
-
+            cell?.cellDelegate = self
             cell?.tableCellData = dataInArray;
+
         }
 
         let cellForReturn = cell ?? UITableViewCell()
 
         return cellForReturn
     }
+}
+
+//MARK:- MainWorkScreenCellProtocol - link from cells
+extension MainScreenDevicesViewController: MainWorkScreenCellProtocol {
+
+    func thisGroupHasName(_ id: Int) -> Bool {
+        let fiteredArrayOfTableData:[FolderCell] = arrayOfTableData?.filter{$0.cellType == CellType.folder} as! [FolderCell]
+
+        let folderPresented:FolderCell? = fiteredArrayOfTableData.filter{$0.cameras_group_id == id}.first
+
+        return folderPresented != nil
+    }
+
 }

@@ -14,6 +14,8 @@
 		E763C36A1E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */; };
 		E763C36D1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C36C1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift */; };
 		E763C3701E4DAFF300DF9ECC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C36F1E4DAFF300DF9ECC /* LoginModel.swift */; };
+		E763C3721E4E2FFF00DF9ECC /* TableCellDataTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3711E4E2FFF00DF9ECC /* TableCellDataTransfer.swift */; };
+		E763C3741E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3731E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift */; };
 		E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */; };
 		E799950A1E4627A000E0423A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995051E4627A000E0423A /* LoginView.swift */; };
 		E799950B1E4627A000E0423A /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79995061E4627A000E0423A /* LoginView.xib */; };
@@ -59,6 +61,8 @@
 		E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenHelper.swift; sourceTree = "<group>"; };
 		E763C36C1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenTableViewCellVC.swift; sourceTree = "<group>"; };
 		E763C36F1E4DAFF300DF9ECC /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E763C3711E4E2FFF00DF9ECC /* TableCellDataTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellDataTransfer.swift; sourceTree = "<group>"; };
+		E763C3731E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenCellProtocol.swift; sourceTree = "<group>"; };
 		E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneSmallViewController.swift; sourceTree = "<group>"; };
 		E79995051E4627A000E0423A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E79995061E4627A000E0423A /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */,
+				E763C3711E4E2FFF00DF9ECC /* TableCellDataTransfer.swift */,
+				E763C3731E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift */,
 			);
 			path = MainWorkScreenHelper;
 			sourceTree = "<group>";
@@ -540,7 +546,9 @@
 				E763C36D1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift in Sources */,
 				E763C3671E4CD14A00DF9ECC /* DevicesList.swift in Sources */,
 				E763C3701E4DAFF300DF9ECC /* LoginModel.swift in Sources */,
+				E763C3741E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift in Sources */,
 				E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */,
+				E763C3721E4E2FFF00DF9ECC /* TableCellDataTransfer.swift in Sources */,
 				E799952B1E4C6F2D00E0423A /* ButtonsMainWorkScreenTableViewCell.swift in Sources */,
 				E79995291E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift in Sources */,
 				E799951D1E49D04600E0423A /* CloudServices.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 struct  MainWorkScreenTableViewCellVC {
 
     func getCorrectImageForCameraStatus(camemaIsOnline isOnline: Bool = false) -> UIImage? {
-        return UIImage(named: isOnline ? "81x44-live" : "81x44-live")
+        return UIImage(named: isOnline ? "81x44-live" : "81x44-live_pass")
     }
 
     func getCorrectImageForCamera(camemaIsArmed isArmed: Bool = false,
