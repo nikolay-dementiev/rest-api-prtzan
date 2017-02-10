@@ -11,6 +11,7 @@ import UIKit
 class MainWorkScreenTableViewCell: UITableViewCell {
 
     var tableCellData: TableCell?
+    let classController = MainWorkScreenTableViewCellVC()
 
     override func awakeFromNib() {
         super.awakeFromNib()

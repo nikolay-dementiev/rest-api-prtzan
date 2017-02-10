@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		34BED4EA70B7E3C643F3C404 /* Pods_REST_api_test_prtzn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EF53F7092923C65E18DD81 /* Pods_REST_api_test_prtzn.framework */; };
-		E763C35E1E4C8A9C00DF9ECC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C35D1E4C8A9C00DF9ECC /* LoginModel.swift */; };
 		E763C3611E4CD11300DF9ECC /* MainScreenDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3601E4CD11300DF9ECC /* MainScreenDevicesViewController.swift */; };
 		E763C3641E4CD11D00DF9ECC /* MainWorkScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E763C3631E4CD11D00DF9ECC /* MainWorkScreen.storyboard */; };
 		E763C3671E4CD14A00DF9ECC /* DevicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3661E4CD14A00DF9ECC /* DevicesList.swift */; };
 		E763C36A1E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */; };
+		E763C36D1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C36C1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift */; };
+		E763C3701E4DAFF300DF9ECC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C36F1E4DAFF300DF9ECC /* LoginModel.swift */; };
 		E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */; };
 		E799950A1E4627A000E0423A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995051E4627A000E0423A /* LoginView.swift */; };
 		E799950B1E4627A000E0423A /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79995061E4627A000E0423A /* LoginView.xib */; };
@@ -52,11 +53,12 @@
 		66BE7A2398D46B6962A5C2D7 /* Pods-REST-api-test-prtzn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST-api-test-prtzn.release.xcconfig"; path = "Pods/Target Support Files/Pods-REST-api-test-prtzn/Pods-REST-api-test-prtzn.release.xcconfig"; sourceTree = "<group>"; };
 		68AA4D8D7B06F510E3A3D67E /* Pods_REST_api_test_prtznTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REST_api_test_prtznTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB04F64A7DB3AC992730958A /* Pods-REST-api-test-prtzn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REST-api-test-prtzn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-REST-api-test-prtzn/Pods-REST-api-test-prtzn.debug.xcconfig"; sourceTree = "<group>"; };
-		E763C35D1E4C8A9C00DF9ECC /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		E763C3601E4CD11300DF9ECC /* MainScreenDevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenDevicesViewController.swift; sourceTree = "<group>"; };
 		E763C3631E4CD11D00DF9ECC /* MainWorkScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainWorkScreen.storyboard; sourceTree = "<group>"; };
 		E763C3661E4CD14A00DF9ECC /* DevicesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesList.swift; sourceTree = "<group>"; };
 		E763C3691E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenHelper.swift; sourceTree = "<group>"; };
+		E763C36C1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenTableViewCellVC.swift; sourceTree = "<group>"; };
+		E763C36F1E4DAFF300DF9ECC /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneSmallViewController.swift; sourceTree = "<group>"; };
 		E79995051E4627A000E0423A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E79995061E4627A000E0423A /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -122,14 +124,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E763C35C1E4C8A7B00DF9ECC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E763C35D1E4C8A9C00DF9ECC /* LoginModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E763C35F1E4CD0B900DF9ECC /* MainWorkScreenVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +156,22 @@
 			path = MainWorkScreenHelper;
 			sourceTree = "<group>";
 		};
+		E763C36B1E4DAF2300DF9ECC /* MainWorkScreenCellsVC */ = {
+			isa = PBXGroup;
+			children = (
+				E763C36C1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift */,
+			);
+			path = MainWorkScreenCellsVC;
+			sourceTree = "<group>";
+		};
+		E763C36E1E4DAFF300DF9ECC /* LoginScreenModel */ = {
+			isa = PBXGroup;
+			children = (
+				E763C36F1E4DAFF300DF9ECC /* LoginModel.swift */,
+			);
+			path = LoginScreenModel;
+			sourceTree = "<group>";
+		};
 		E79994FC1E46204E00E0423A /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +185,7 @@
 		E79995011E4627A000E0423A /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E763C35C1E4C8A7B00DF9ECC /* Model */,
+				E763C36E1E4DAFF300DF9ECC /* LoginScreenModel */,
 				E79995021E4627A000E0423A /* LoginScreenController */,
 				E79995041E4627A000E0423A /* LoginView */,
 			);
@@ -242,6 +252,7 @@
 			children = (
 				E79995281E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift */,
 				E79995301E4C6FF500E0423A /* InheritanceMainWorkScreenTableViewCell */,
+				E763C36B1E4DAF2300DF9ECC /* MainWorkScreenCellsVC */,
 			);
 			path = MainWorkScreenCells;
 			sourceTree = "<group>";
@@ -518,7 +529,6 @@
 				E79995141E48FA9600E0423A /* iPadViewController.swift in Sources */,
 				E799950A1E4627A000E0423A /* LoginView.swift in Sources */,
 				E799950F1E4627D800E0423A /* LoginScreenViewController.swift in Sources */,
-				E763C35E1E4C8A9C00DF9ECC /* LoginModel.swift in Sources */,
 				E799951B1E49CFC700E0423A /* AppSettings.swift in Sources */,
 				E79995121E48F89700E0423A /* StartPoint.swift in Sources */,
 				E763C36A1E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift in Sources */,
@@ -527,7 +537,9 @@
 				E799952F1E4C6FC500E0423A /* GroupMainWorkScreenTableViewCell.swift in Sources */,
 				E79995241E4C5C0900E0423A /* LoginScreenProtocol.swift in Sources */,
 				E799952D1E4C6F8A00E0423A /* ListDetailMainWorkScreenTableViewCell.swift in Sources */,
+				E763C36D1E4DAF4800DF9ECC /* MainWorkScreenTableViewCellVC.swift in Sources */,
 				E763C3671E4CD14A00DF9ECC /* DevicesList.swift in Sources */,
+				E763C3701E4DAFF300DF9ECC /* LoginModel.swift in Sources */,
 				E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */,
 				E799952B1E4C6F2D00E0423A /* ButtonsMainWorkScreenTableViewCell.swift in Sources */,
 				E79995291E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift in Sources */,

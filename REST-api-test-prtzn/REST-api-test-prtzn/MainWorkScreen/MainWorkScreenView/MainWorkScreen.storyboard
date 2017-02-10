@@ -81,11 +81,14 @@
                                                     <state key="disabled" backgroundImage="settings_pass"/>
                                                     <state key="selected" backgroundImage="settings_click"/>
                                                     <state key="highlighted" backgroundImage="settings_click"/>
+                                                    <connections>
+                                                        <action selector="groupeSettingsButtonPressed:" destination="JpN-W5-nKx" eventType="touchUpInside" id="A8o-7g-b7T"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbR-VU-Kqj">
                                                     <rect key="frame" x="59" y="10" width="245" height="23"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.47058823529411764" green="0.42352941176470588" blue="0.34901960784313724" alpha="0.83160316779999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -100,6 +103,11 @@
                                                 <constraint firstItem="Ocg-43-yGv" firstAttribute="centerY" secondItem="Oye-1u-rm7" secondAttribute="centerY" id="ul6-Vq-Gg7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="groupeImage" destination="Ocg-43-yGv" id="U8K-Ru-gGO"/>
+                                            <outlet property="groupeNameLabel" destination="BbR-VU-Kqj" id="whO-79-oHB"/>
+                                            <outlet property="groupeSettingsButton" destination="dKX-W4-fmG" id="S09-ut-rtf"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listDetail" id="sj1-YU-yPf" customClass="ListDetailMainWorkScreenTableViewCell" customModule="REST_api_test_prtzn" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="343" height="44"/>
@@ -128,6 +136,9 @@
                                                             <state key="disabled" backgroundImage="settings_pass"/>
                                                             <state key="selected" backgroundImage="settings_click"/>
                                                             <state key="highlighted" backgroundImage="settings_click"/>
+                                                            <connections>
+                                                                <action selector="detailSettingsButtonPressed:" destination="sj1-YU-yPf" eventType="touchUpInside" id="y3l-5m-laP"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44z-41-CUg">
                                                             <rect key="frame" x="30" y="0.0" width="55" height="30"/>
@@ -137,6 +148,9 @@
                                                             </constraints>
                                                             <state key="normal" image="81x44-live"/>
                                                             <state key="disabled" image="81x44-live_pass"/>
+                                                            <connections>
+                                                                <action selector="detailCameraLiveButtonPressed:" destination="sj1-YU-yPf" eventType="touchUpInside" id="gNh-Cx-upK"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIA-8x-mxp">
                                                             <rect key="frame" x="87" y="0.0" width="55" height="30"/>
@@ -146,13 +160,16 @@
                                                             </constraints>
                                                             <state key="normal" image="81x44-playback"/>
                                                             <state key="disabled" image="81x44-playback_pass"/>
+                                                            <connections>
+                                                                <action selector="detailPlayBackButtonPressed:" destination="sj1-YU-yPf" eventType="touchUpInside" id="3sV-M8-Pdl"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogB-v8-9SN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogB-v8-9SN">
                                                     <rect key="frame" x="60" y="9" width="133" height="25"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.47058823529411764" green="0.42352941176470588" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -167,6 +184,14 @@
                                                 <constraint firstItem="FkX-ZI-U6W" firstAttribute="centerY" secondItem="pf9-o0-1Q6" secondAttribute="centerY" id="pyj-RI-JY4"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailCameraLiveButton" destination="44z-41-CUg" id="duK-is-Fef"/>
+                                            <outlet property="detailImage" destination="FkX-ZI-U6W" id="It6-dT-Uwc"/>
+                                            <outlet property="detailImageLeadinConstraint" destination="dGB-iF-UfZ" id="JLv-Wz-7Hc"/>
+                                            <outlet property="detailNameLabel" destination="ogB-v8-9SN" id="HGV-dY-xbO"/>
+                                            <outlet property="detailPlayBackButton" destination="ZIA-8x-mxp" id="zw2-BP-1C3"/>
+                                            <outlet property="detailSettingsButton" destination="vrA-YW-uRB" id="Ddj-eP-UDH"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="buttons" rowHeight="82" id="uYm-YN-vJg" customClass="ButtonsMainWorkScreenTableViewCell" customModule="REST_api_test_prtzn" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="343" height="82"/>
@@ -183,6 +208,9 @@
                                                             <state key="normal" title="Add group" backgroundImage="btn_green_unpressed"/>
                                                             <state key="selected" backgroundImage="btn_green_pressed"/>
                                                             <state key="highlighted" backgroundImage="btn_green_pressed"/>
+                                                            <connections>
+                                                                <action selector="buttonsAddGroupButtonPressed:" destination="uYm-YN-vJg" eventType="touchUpInside" id="hfd-an-sEn"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unB-qc-ltH">
                                                             <rect key="frame" x="140" y="0.0" width="120" height="72"/>
@@ -190,6 +218,9 @@
                                                             <state key="normal" title="Add device" backgroundImage="btn_green_unpressed"/>
                                                             <state key="selected" backgroundImage="btn_green_pressed"/>
                                                             <state key="highlighted" backgroundImage="btn_green_pressed"/>
+                                                            <connections>
+                                                                <action selector="buttonsAddDeviceButtonPressed:" destination="uYm-YN-vJg" eventType="touchUpInside" id="0br-Gf-1FD"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -205,13 +236,53 @@
                                             <constraint firstItem="wyu-CW-cYf" firstAttribute="top" secondItem="uYm-YN-vJg" secondAttribute="top" constant="5" id="WSC-r0-TSi"/>
                                             <constraint firstAttribute="bottom" secondItem="wyu-CW-cYf" secondAttribute="bottom" constant="5" id="bTA-HQ-JEG"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="buttonsAddDeviceButton" destination="unB-qc-ltH" id="k4D-uX-mBg"/>
+                                            <outlet property="buttonsAddGroupButton" destination="Qt8-wN-Aec" id="Vhh-sB-utz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yla-nn-6vf">
                                 <rect key="frame" x="16" y="72" width="343" height="52"/>
-                                <color key="backgroundColor" red="0.12549019610000001" green="0.60392156860000001" blue="0.63529411759999999" alpha="0.83160316779999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER CAMERAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG4-2X-zqn">
+                                        <rect key="frame" x="90.5" y="14" width="163.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4C4-TI-Nv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="22" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="sU7-B4-4b8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="〈">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VT0-0Y-mu7">
+                                        <rect key="frame" x="321" y="0.0" width="22" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="H60-yc-sfg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="〉">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.74117647058823533" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="BG4-2X-zqn" firstAttribute="centerX" secondItem="yla-nn-6vf" secondAttribute="centerX" id="8QN-f6-6zh"/>
+                                    <constraint firstItem="BG4-2X-zqn" firstAttribute="centerY" secondItem="yla-nn-6vf" secondAttribute="centerY" id="9lA-vk-prq"/>
+                                    <constraint firstItem="4C4-TI-Nv3" firstAttribute="top" secondItem="yla-nn-6vf" secondAttribute="top" id="GEK-DW-KHj"/>
+                                    <constraint firstItem="VT0-0Y-mu7" firstAttribute="top" secondItem="yla-nn-6vf" secondAttribute="top" id="Jhq-Sp-Qkx"/>
+                                    <constraint firstAttribute="bottom" secondItem="4C4-TI-Nv3" secondAttribute="bottom" id="RL9-Tg-FCP"/>
+                                    <constraint firstItem="4C4-TI-Nv3" firstAttribute="leading" secondItem="yla-nn-6vf" secondAttribute="leading" id="Sm0-n9-sag"/>
+                                    <constraint firstAttribute="bottom" secondItem="VT0-0Y-mu7" secondAttribute="bottom" id="TnF-Cu-TGH"/>
+                                    <constraint firstAttribute="trailing" secondItem="VT0-0Y-mu7" secondAttribute="trailing" id="f7e-Se-Ytq"/>
                                     <constraint firstAttribute="height" constant="52" id="tHe-JF-DFC"/>
                                 </constraints>
                             </view>

@@ -3,7 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "static MainWorkScreenHelper.followModelCollectDataForTable(arrayOfData : inout [TableCell], folder : UserCameras?) -&gt; ():MainWorkScreenHelper.swift">
+         contextName = "GroupMainWorkScreenTableViewCell.tableCellData.didset:GroupMainWorkScreenTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableCellData">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "URLEncoding.encode(URLRequestConvertible, with : [String : Any]?) throws -&gt; URLRequest:ParameterEncoding.swift">
@@ -14,7 +19,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "static DetailCell.make(dataObject : Mappable?) -&gt; TableCell?:MainWorkScreenHelper.swift">
+         contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String, completion : (Bool, String) -&gt; ()) -&gt; ()).(closure #1):CloudServices.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+            <PersistentString
+               value = "object">
+            </PersistentString>
+            <PersistentString
+               value = "response.result">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String:CloudServices.swift">
@@ -39,10 +55,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginScreenViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():LoginScreenViewController.swift">
+         contextName = "LoginModel.mapping(map : Map) -&gt; ():LoginModel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "devicesListModel">
+               value = "error_code">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -55,15 +71,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MainScreenDevicesViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:MainScreenDevicesViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MainScreenDevicesViewController.tableView(UITableView, heightForRowAt : IndexPath) -&gt; CGFloat:MainScreenDevicesViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "indexPath.row">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "DevicesList.mapping(map : Map) -&gt; ():DevicesList.swift">
       </ContextState>
       <ContextState
          contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String) -&gt; ()).(closure #1):CloudServices.swift">
@@ -102,7 +110,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "static MainWorkScreenHelper.createUsefulDataForMainWorkScreenTable(dataOfDevices : DevicesList) -&gt; [TableCell]?:MainWorkScreenHelper.swift">
+         contextName = "ListDetailMainWorkScreenTableViewCell.tableCellData.didset:ListDetailMainWorkScreenTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableCellData">
+            </PersistentString>
+            <PersistentString
+               value = "newValue">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "LoginView.init(coder : NSCoder) -&gt; LoginView?:LoginView.swift">
@@ -124,18 +140,13 @@
          contextName = "static CloudServices.createJsonParameters(userName : String, password : String, currentAppSettings : AppSettings) -&gt; JSONSerialization?:CloudServices.swift">
       </ContextState>
       <ContextState
+         contextName = "static CloudServices.(getUserDevices() -&gt; ()).(closure #1):CloudServices.swift">
+      </ContextState>
+      <ContextState
          contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings, prettyPrinted : Bool) -&gt; String?:CloudServices.swift">
          <PersistentStrings>
             <PersistentString
                value = "String(describing: decoded)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MainScreenDevicesViewController.devicesListModel.didset:MainScreenDevicesViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "devicesListModel">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

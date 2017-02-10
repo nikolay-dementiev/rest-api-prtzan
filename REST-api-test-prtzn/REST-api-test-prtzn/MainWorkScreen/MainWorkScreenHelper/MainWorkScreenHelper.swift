@@ -78,8 +78,8 @@ struct FolderCell: TableCell {
     //    private var dataObject: UserCameras
     let cellType = CellType.folder
 
-    private var cameras_group_name: String = ""
-    private var cameras_group_id: Int = 0
+    var cameras_group_name: String = ""
+    var cameras_group_id: Int = 0
 
     static func make(dataObject : Mappable?) -> TableCell? {
 
@@ -99,14 +99,14 @@ struct DetailCell: TableCell {
     //    private var dataObject: Camera
     let cellType = CellType.cell
 
-    private var storage_enabled: Bool = false
-    private var camera_id: Int = 0
-    private var device_id: Int = 0
-    private var camera_name: String = ""
-    private var is_active: Bool = false
-    private var is_online: Bool = false
-    private var is_armed: Bool = false
-    private var cameras_group_id: Int = 0
+    var storage_enabled: Bool = false
+    var camera_id: Int = 0
+    var device_id: Int = 0
+    var camera_name: String = ""
+    var is_active: Bool = false
+    var is_online: Bool = false
+    var is_armed: Bool = false
+    var cameras_group_id: Int = 0
 
 
     static func make(dataObject : Mappable?) -> TableCell? {
