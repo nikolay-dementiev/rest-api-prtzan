@@ -25,11 +25,6 @@ class LoginScreenViewController: UIViewController {
         loginInputDataView.passwordTextField.text = "JV2-bSE-PWm-22y"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
@@ -54,7 +49,7 @@ class LoginScreenViewController: UIViewController {
 
 }
 
-//MARK: LoginScreenProtocol
+//MARK:- LoginScreenProtocol
 
 extension LoginScreenViewController: LoginScreenProtocol {
 
@@ -100,4 +95,15 @@ extension LoginScreenViewController: LoginScreenProtocol {
         })
     }
 
+    //MARK: UITextFieldDelegate
+
+    // called when 'return' key pressed. return NO to ignore.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
 }
+
+
+

@@ -13,7 +13,12 @@ import UIKit
 @IBDesignable
 class LoginView: UIView {
 
-    var loginViewControllerDelegat: LoginScreenProtocol?
+    var loginViewControllerDelegat: LoginScreenProtocol? {
+        didSet {
+            emaiTextField.delegate = loginViewControllerDelegat
+            passwordTextField.delegate = loginViewControllerDelegat
+        }
+    }
 
     @IBOutlet weak var appVersionLabel: UILabel!
     @IBOutlet weak var emaiLabel: UILabel!
@@ -28,28 +33,9 @@ class LoginView: UIView {
     @IBOutlet weak var restoreButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var registrationButton: UIButton!
+
     @IBAction func loginButtonPressed(_ sender: Any) {
 
-//        CloudServices.makeSecurityLogin(userName: "nikolas.dementiev@gmail.com",
-//                                        password: "JV2-bSE-PWm-22y")
-//        { (loginOK: Bool, clarification: String) in
-//            if loginOK { // no error
-//                //go to main work screen
-//                CloudServices.getUserDevices(completion: {
-//                    (allOK:Bool, detailStr: String, devicesFromJSON:DevicesList?) in
-//
-//                    if allOK {
-//                        self.loginViewControllerDelegat?.devicesListModel = devicesFromJSON;
-//                    } else {
-//                        print("Problem to login occured: \(detailStr)")
-//                    }
-//
-//                })
-//                self.loginViewControllerDelegat?.goToMainWorkScreen()
-//            } else {
-//                print("Problem to login occured: \(clarification)")
-//            }
-//        }
         self.loginViewControllerDelegat?.logginUserOnServer(userName: emaiTextField.text!,
                                                             password: passwordTextField.text!,
                                                             getDevices: true)
@@ -126,7 +112,17 @@ class LoginView: UIView {
 
     //MARK: custom interface settings
     private func setInitParameters() {
+
         self.appVersionLabel.text = AppSettings.appVersion
+
+        emaiTextField.returnKeyType = UIReturnKeyType.done
+        passwordTextField.returnKeyType = UIReturnKeyType.done
+
+//        emaiTextField.layer.borderWidth = 2.0
+//        emaiTextField.layer.borderColor = emaiLabel.textColor.cgColor
+//
+//        passwordTextField.layer.borderWidth = 2.0
+//        passwordTextField.layer.borderColor = passwordLabel.textColor.cgColor
     }
 
     private func setImageForButtons() {

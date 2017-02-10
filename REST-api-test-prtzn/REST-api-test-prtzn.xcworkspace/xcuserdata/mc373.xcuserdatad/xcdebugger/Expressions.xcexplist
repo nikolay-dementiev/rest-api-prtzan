@@ -127,6 +127,14 @@
          contextName = "static MainWorkScreenHelper.createUsefulDataForMainWorkScreenTable(dataOfDevices : DevicesList) -&gt; [TableCell]?:MainWorkScreenHelper.swift">
       </ContextState>
       <ContextState
+         contextName = "LoginView.loginViewControllerDelegat.didset:LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loginViewControllerDelegat">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "static CloudServices.(makeSecurityLogin(userName : String, password : String) -&gt; ()).(closure #1):CloudServices.swift">
          <PersistentStrings>
             <PersistentString
@@ -144,6 +152,14 @@
       </ContextState>
       <ContextState
          contextName = "static CloudServices.createJsonParameters(userName : String, password : String, currentAppSettings : AppSettings) -&gt; JSONSerialization?:CloudServices.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoginView.setInitParameters() -&gt; ():LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.loginViewControllerDelegat">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "MainScreenDevicesViewController.devicesListModel.didset:MainScreenDevicesViewController.swift">

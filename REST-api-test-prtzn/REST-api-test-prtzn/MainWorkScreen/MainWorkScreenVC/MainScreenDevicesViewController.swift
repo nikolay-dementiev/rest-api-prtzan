@@ -21,7 +21,7 @@ class MainScreenDevicesViewController: UIViewController {
             }
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -90,8 +90,8 @@ extension MainScreenDevicesViewController: MainWorkScreenCellProtocol {
         let fiteredArrayOfTableData:[FolderCell] = arrayOfTableData?.filter{$0.cellType == CellType.folder} as! [FolderCell]
 
         let folderPresented:FolderCell? = fiteredArrayOfTableData.filter{$0.cameras_group_id == id}.first
-
+        
         return folderPresented != nil
     }
-
+    
 }
