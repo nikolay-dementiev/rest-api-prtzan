@@ -429,10 +429,10 @@
             </objects>
             <point key="canvasLocation" x="-364" y="-111.0944527736132"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Screen Tab Bar Controller-->
         <scene sceneID="pIf-Dn-kL2">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aSU-Qn-d4X" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aSU-Qn-d4X" customClass="MainScreenTabBarController" customModule="REST_api_test_prtzn" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="M65-e4-vb7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="56D-3U-rSX">
