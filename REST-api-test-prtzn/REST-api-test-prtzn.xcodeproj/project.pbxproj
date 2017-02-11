@@ -16,6 +16,9 @@
 		E763C3701E4DAFF300DF9ECC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C36F1E4DAFF300DF9ECC /* LoginModel.swift */; };
 		E763C3721E4E2FFF00DF9ECC /* TableCellDataTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3711E4E2FFF00DF9ECC /* TableCellDataTransfer.swift */; };
 		E763C3741E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3731E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift */; };
+		E763C3771E4F208C00DF9ECC /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3761E4F208C00DF9ECC /* CheckBoxButton.swift */; };
+		E763C3791E4F5E2400DF9ECC /* ChecBoxSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C3781E4F5E2400DF9ECC /* ChecBoxSubview.swift */; };
+		E763C37B1E4F5E9800DF9ECC /* CheckBoxLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763C37A1E4F5E9800DF9ECC /* CheckBoxLabel.swift */; };
 		E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */; };
 		E799950A1E4627A000E0423A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79995051E4627A000E0423A /* LoginView.swift */; };
 		E799950B1E4627A000E0423A /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79995061E4627A000E0423A /* LoginView.xib */; };
@@ -63,6 +66,9 @@
 		E763C36F1E4DAFF300DF9ECC /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		E763C3711E4E2FFF00DF9ECC /* TableCellDataTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellDataTransfer.swift; sourceTree = "<group>"; };
 		E763C3731E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorkScreenCellProtocol.swift; sourceTree = "<group>"; };
+		E763C3761E4F208C00DF9ECC /* CheckBoxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
+		E763C3781E4F5E2400DF9ECC /* ChecBoxSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecBoxSubview.swift; sourceTree = "<group>"; };
+		E763C37A1E4F5E9800DF9ECC /* CheckBoxLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxLabel.swift; sourceTree = "<group>"; };
 		E79995031E4627A000E0423A /* iPhoneSmallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneSmallViewController.swift; sourceTree = "<group>"; };
 		E79995051E4627A000E0423A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E79995061E4627A000E0423A /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -178,6 +184,16 @@
 			path = LoginScreenModel;
 			sourceTree = "<group>";
 		};
+		E763C3751E4F207100DF9ECC /* CheckBoxButton */ = {
+			isa = PBXGroup;
+			children = (
+				E763C3761E4F208C00DF9ECC /* CheckBoxButton.swift */,
+				E763C3781E4F5E2400DF9ECC /* ChecBoxSubview.swift */,
+				E763C37A1E4F5E9800DF9ECC /* CheckBoxLabel.swift */,
+			);
+			path = CheckBoxButton;
+			sourceTree = "<group>";
+		};
 		E79994FC1E46204E00E0423A /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 		E79995011E4627A000E0423A /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				E763C3751E4F207100DF9ECC /* CheckBoxButton */,
 				E763C36E1E4DAFF300DF9ECC /* LoginScreenModel */,
 				E79995021E4627A000E0423A /* LoginScreenController */,
 				E79995041E4627A000E0423A /* LoginView */,
@@ -534,8 +551,10 @@
 			files = (
 				E79995141E48FA9600E0423A /* iPadViewController.swift in Sources */,
 				E799950A1E4627A000E0423A /* LoginView.swift in Sources */,
+				E763C37B1E4F5E9800DF9ECC /* CheckBoxLabel.swift in Sources */,
 				E799950F1E4627D800E0423A /* LoginScreenViewController.swift in Sources */,
 				E799951B1E49CFC700E0423A /* AppSettings.swift in Sources */,
+				E763C3771E4F208C00DF9ECC /* CheckBoxButton.swift in Sources */,
 				E79995121E48F89700E0423A /* StartPoint.swift in Sources */,
 				E763C36A1E4CD1BB00DF9ECC /* MainWorkScreenHelper.swift in Sources */,
 				E7C0223E1E43191A008957EA /* AppDelegate.swift in Sources */,
@@ -549,6 +568,7 @@
 				E763C3741E4E41F200DF9ECC /* MainWorkScreenCellProtocol.swift in Sources */,
 				E79995091E4627A000E0423A /* iPhoneSmallViewController.swift in Sources */,
 				E763C3721E4E2FFF00DF9ECC /* TableCellDataTransfer.swift in Sources */,
+				E763C3791E4F5E2400DF9ECC /* ChecBoxSubview.swift in Sources */,
 				E799952B1E4C6F2D00E0423A /* ButtonsMainWorkScreenTableViewCell.swift in Sources */,
 				E79995291E4C6F0300E0423A /* MainWorkScreenTableViewCell.swift in Sources */,
 				E799951D1E49D04600E0423A /* CloudServices.swift in Sources */,

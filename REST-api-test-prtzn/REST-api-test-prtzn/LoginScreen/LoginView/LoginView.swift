@@ -29,7 +29,8 @@ class LoginView: UIView {
     @IBOutlet weak var demoButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
 
-    @IBOutlet weak var rememberButton: UIButton!
+    @IBOutlet weak var rememberButtonCLabel: CheckBoxLabel!
+    @IBOutlet weak var rememberButtonC: CheckBoxButton!
     @IBOutlet weak var restoreButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var registrationButton: UIButton!
@@ -52,7 +53,8 @@ class LoginView: UIView {
             setFontSizeForElement(loginButton)
 
             let corPoint:Int = -4
-            setFontSizeForElement(rememberButton, corPoint: corPoint)
+            setFontSizeForElement(rememberButtonC, corPoint: corPoint)
+            setFontSizeForElement(rememberButtonCLabel, corPoint: corPoint)
             setFontSizeForElement(restoreButton, corPoint: corPoint)
             setFontSizeForElement(helpButton, corPoint: corPoint)
             setFontSizeForElement(registrationButton, corPoint: corPoint)
@@ -117,6 +119,9 @@ class LoginView: UIView {
 
         emaiTextField.returnKeyType = UIReturnKeyType.done
         passwordTextField.returnKeyType = UIReturnKeyType.done
+
+        rememberButtonCLabel?.linkedViewButton = rememberButtonC
+        rememberButtonC.borderColor = rememberButtonCLabel.textColor
 
 //        emaiTextField.layer.borderWidth = 2.0
 //        emaiTextField.layer.borderColor = emaiLabel.textColor.cgColor

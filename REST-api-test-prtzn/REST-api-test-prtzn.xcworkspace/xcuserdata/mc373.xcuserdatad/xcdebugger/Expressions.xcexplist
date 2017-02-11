@@ -6,6 +6,14 @@
          contextName = "static DetailCell.make(dataObject : Mappable?) -&gt; TableCell?:MainWorkScreenHelper.swift">
       </ContextState>
       <ContextState
+         contextName = "CheckBoxButton.borderColor.setter:CheckBoxButton.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "borderColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ListDetailMainWorkScreenTableViewCell.tableCellData.didset:ListDetailMainWorkScreenTableViewCell.swift">
          <PersistentStrings>
             <PersistentString
@@ -156,6 +164,9 @@
       <ContextState
          contextName = "LoginView.setInitParameters() -&gt; ():LoginView.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "rememberButtonCLabel.textColor">
+            </PersistentString>
             <PersistentString
                value = "self.loginViewControllerDelegat">
             </PersistentString>
