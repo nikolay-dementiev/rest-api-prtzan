@@ -181,6 +181,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "LoginView.setFontSizeForElement(UIButton?, corPoint : Int) -&gt; ():LoginView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "button?.titleLabel?.font">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "static CloudServices.createJsonParameters(uName : String, uPass : String, cSettings : AppSettings) -&gt; String?:CloudServices.swift">
          <PersistentStrings>
             <PersistentString

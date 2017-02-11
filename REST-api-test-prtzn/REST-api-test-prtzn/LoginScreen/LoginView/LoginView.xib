@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -125,16 +126,17 @@
                             <rect key="frame" x="0.0" y="152" width="301" height="146"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6r5-HN-9Jq">
-                                    <rect key="frame" x="0.0" y="0.0" width="301" height="28.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="301" height="30"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Jo-zR-uEN">
-                                            <rect key="frame" x="0.0" y="0.0" width="114" height="28.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62l-hk-bmI" customClass="CheckBoxButton" customModule="REST_api_test_prtzn" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="28.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="28.5" id="6DI-54-U67"/>
-                                                        <constraint firstAttribute="width" constant="30" id="p0o-dq-dho"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="6DI-54-U67"/>
+                                                        <constraint firstAttribute="width" secondItem="62l-hk-bmI" secondAttribute="height" multiplier="1:1" id="eCX-Uu-Trx"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="p0o-dq-dho"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="image" keyPath="checkedStateImage" value="thumbImage"/>
@@ -144,7 +146,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8D-LY-mNf" customClass="CheckBoxLabel" customModule="REST_api_test_prtzn" customModuleProvider="target">
-                                                    <rect key="frame" x="30" y="0.0" width="84" height="28.5"/>
+                                                    <rect key="frame" x="30" y="0.0" width="84" height="30"/>
                                                     <color key="tintColor" red="0.66666666669999997" green="0.59999999999999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.66666666669999997" green="0.59999999999999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -156,7 +158,7 @@
                                             </constraints>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mn4-Na-tyX">
-                                            <rect key="frame" x="242" y="0.0" width="59" height="28.5"/>
+                                            <rect key="frame" x="242" y="0.0" width="59" height="30"/>
                                             <color key="tintColor" red="0.66666666669999997" green="0.59999999999999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
                                                 <attributedString key="attributedTitle">
@@ -172,16 +174,16 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="dvF-m5-tbj">
-                                    <rect key="frame" x="0.0" y="31.5" width="301" height="82"/>
+                                    <rect key="frame" x="0.0" y="33" width="301" height="80.5"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4h-a9-tb9">
-                                            <rect key="frame" x="0.0" y="0.0" width="137" height="82"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="137" height="80.5"/>
                                             <state key="normal" title="Demo" backgroundImage="btn_green_unpressed"/>
                                             <state key="selected" backgroundImage="btn_green_pressed"/>
                                             <state key="highlighted" backgroundImage="btn_green_pressed"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwX-GL-2q5">
-                                            <rect key="frame" x="164" y="0.0" width="137" height="82"/>
+                                            <rect key="frame" x="164" y="0.0" width="137" height="80.5"/>
                                             <state key="normal" title="Login" backgroundImage="btn_blue_unpressed"/>
                                             <state key="selected" backgroundImage="btn_blue_pressed"/>
                                             <state key="highlighted" backgroundImage="btn_blue_pressed"/>

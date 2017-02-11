@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6di-il-gRm">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,11 +20,11 @@
                         <viewControllerLayoutGuide type="bottom" id="hVZ-Qr-q1U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pt3-4d-wfA">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="initial screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCn-Zo-E7b">
-                                <rect key="frame" x="312" y="496" width="144" height="32"/>
+                                <rect key="frame" x="440" y="667" width="144" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,40 +50,41 @@
                         <viewControllerLayoutGuide type="bottom" id="fQf-WJ-zql"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Uj-jv-V6D">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="768x1024" translatesAutoresizingMaskIntoConstraints="NO" id="Xlb-3m-VAi">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="1346"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-2560x316px-UP" translatesAutoresizingMaskIntoConstraints="NO" id="wza-GA-Del">
-                                <rect key="frame" x="0.0" y="67" width="768" height="1"/>
+                                <rect key="frame" x="0.0" y="67" width="1024" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="xN0-UF-psR"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2560x98px-DOWN" translatesAutoresizingMaskIntoConstraints="NO" id="8BV-uh-OFm">
-                                <rect key="frame" x="0.0" y="1009" width="768" height="15"/>
+                                <rect key="frame" x="0.0" y="1351" width="1024" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="dvW-Ql-iTB"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gD-AW-wao" customClass="LoginView" customModule="REST_api_test_prtzn" customModuleProvider="target">
-                                <rect key="frame" x="174" y="592" width="420" height="258"/>
+                                <rect key="frame" x="387" y="753" width="250" height="260.5"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="420" id="Nyx-3x-a6E"/>
+                                    <constraint firstAttribute="width" secondItem="7gD-AW-wao" secondAttribute="height" multiplier="25:26" id="Cqb-kA-GYO"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Nyx-3x-a6E"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="textSize">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="19"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.054901960780000002" green="0.29803921570000003" blue="0.090196078430000007" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7gD-AW-wao" firstAttribute="centerY" secondItem="9Uj-jv-V6D" secondAttribute="centerY" constant="209" id="1eJ-eJ-z8h"/>
+                            <constraint firstItem="7gD-AW-wao" firstAttribute="top" secondItem="9Uj-jv-V6D" secondAttribute="centerY" constant="70" id="1eJ-eJ-z8h"/>
                             <constraint firstItem="Xlb-3m-VAi" firstAttribute="leading" secondItem="9Uj-jv-V6D" secondAttribute="leading" id="7qL-Rr-uA3"/>
                             <constraint firstItem="Xlb-3m-VAi" firstAttribute="top" secondItem="9Uj-jv-V6D" secondAttribute="top" constant="20" id="JII-db-RRe"/>
                             <constraint firstItem="wza-GA-Del" firstAttribute="top" secondItem="vvy-8Q-Orm" secondAttribute="bottom" constant="47" id="OS4-e1-Bed"/>
@@ -92,7 +95,7 @@
                             <constraint firstItem="8BV-uh-OFm" firstAttribute="leading" secondItem="wza-GA-Del" secondAttribute="leading" id="ndA-tD-LfH"/>
                             <constraint firstAttribute="trailing" secondItem="Xlb-3m-VAi" secondAttribute="trailing" id="neZ-zv-v2M"/>
                             <constraint firstItem="8BV-uh-OFm" firstAttribute="trailing" secondItem="wza-GA-Del" secondAttribute="trailing" id="onc-ce-Qef"/>
-                            <constraint firstItem="8BV-uh-OFm" firstAttribute="top" secondItem="7gD-AW-wao" secondAttribute="bottom" constant="159" id="ow0-rR-1R9"/>
+                            <constraint firstItem="8BV-uh-OFm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7gD-AW-wao" secondAttribute="bottom" constant="10" id="ow0-rR-1R9"/>
                             <constraint firstItem="7gD-AW-wao" firstAttribute="centerX" secondItem="Xlb-3m-VAi" secondAttribute="centerX" id="su5-ny-2JW"/>
                         </constraints>
                     </view>

@@ -54,7 +54,7 @@ class LoginView: UIView {
 
             let corPoint:Int = -4
             setFontSizeForElement(rememberButtonC, corPoint: corPoint)
-            setFontSizeForElement(rememberButtonCLabel, corPoint: corPoint)
+            setFontSizeForElement(rememberButtonCLabel, corPoint: -2)
             setFontSizeForElement(restoreButton, corPoint: corPoint)
             setFontSizeForElement(helpButton, corPoint: corPoint)
             setFontSizeForElement(registrationButton, corPoint: corPoint)
