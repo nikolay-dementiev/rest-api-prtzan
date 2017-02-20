@@ -1,7 +1,13 @@
 # REST-api-test-prtzn
 
 <td><h2><strong>test work</strong></h2>
+<p><strong>Task: </strong></p>
+<ul>
+<li><a href="/REST-api-test-prtzn/REST-api-test-prtzn/Helper/Partizan CLOUD STORAGE API.docx">Partizan CLOUD STORAGE API.docx</a></li>
+<li><a href="/REST-api-test-prtzn/REST-api-test-prtzn/Helper/Тестовая задача.docx">Тестовая задача.docx</a></li>
+</ul>
 
+<p><strong>Implementation: </strong></p>
 <table>
 <tbody>
 <tr>
@@ -38,17 +44,3 @@
 </tr>
 </tbody>
 </table>
-
-<p>&nbsp;</p>
-<p><strong>ТЗ: </strong></p>
-<p>&nbsp;</p>
-<ul>
-<li><a href="/REST-api-test-prtzn/REST-api-test-prtzn/Helper/Partizan CLOUD STORAGE API.docx">Partizan CLOUD STORAGE API.docx</a></li>
-<li><a href="/REST-api-test-prtzn/REST-api-test-prtzn/Helper/Тестовая задача.docx">Тестовая задача.docx</a></li>
-</ul>
-
-
-
-
-
-
